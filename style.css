@@ -1,0 +1,423 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url("https://i.blogs.es/b664eb/amazon/1366_2000.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: #FFF;
+  
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+header form {
+  display: flex;
+  margin-right: 20px;
+}
+
+header form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+header form button[type="submit"] {
+  padding: 10px;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+
+header ul li a {
+  color: #FFF;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section ul li {
+  width: calc(100% / 3 - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #EEE;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section ul li a:hover {
+  background-color: #DDD;
+}
+
+section ul li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+section ul li h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section ul li p {
+  margin-bottom: 10px;
+}
+
+section ul li span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos del carrito */
+.carrito {
+  margin-top: 20px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 20px;
+  }
+  
+  .carrito h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+  
+  .carrito table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  
+  .carrito th {
+  background-color: #EEE;
+  padding: 10px;
+  text-align: left;
+  }
+  
+  .carrito td {
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+  }
+  
+  .carrito td:last-child {
+  text-align: right;
+  }
+  
+  .carrito .eliminar {
+  color: #FF0000;
+  cursor: pointer;
+  }
+  
+  .carrito .eliminar:hover {
+  text-decoration: underline;
+  }
+  
+  .carrito .total {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  }
+  
+  /* Estilos del checkout */
+  .checkout {
+  margin-top: 20px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(56, 235, 251);
+  }
+  
+  .checkout h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+  
+  .checkout label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  }
+  
+  .checkout input[type="text"],
+  .checkout select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  }
+  
+  .checkout input[type="submit"] {
+  padding: 10px;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .checkout input[type="submit"]:hover {
+  background-color: #444;
+  }
+  
+  .checkout .error {
+  color: #FF0000;
+  margin-bottom: 10px;
+  }
+
+  .botonCarrito {
+      background-color: rgb(56, 235, 251);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px auto;
+  }
+
+.Login {
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: url(./background.jpg);
+  background-size: cover;
+  width: 50%;
+  
+}
+
+.container {
+  width: 50%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.container,
+.form__input,
+.form__button {
+  font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__message--success {
+  color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
+
+.form__input-group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  margin-top: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+
+
+  
+  
+
